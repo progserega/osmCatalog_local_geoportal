@@ -1,0 +1,347 @@
+[
+  {
+    "name": "power",
+    "parent": [],
+    "tags": {},
+    "moretags": {},
+    "poi": false,
+    "type": [],
+    "id": 30
+  },
+  {
+    "name": "offices",
+    "parent": [],
+    "tags": {},
+    "moretags": {},
+    "poi": false,
+    "type": [],
+    "id": 32
+  },
+  {
+    "name": "power_upravlenie",
+    "parent": ["offices"],
+    "tags": {"office":"power","office:type":"manage"},
+    "moretags": {
+      "population": {
+        "type": "number",
+        "tag": "population"
+      },
+      "operator": {
+        "type": "number",
+        "tag": "operator"
+      }
+    },
+    "poi": true,
+    "type": ["way", "relation","node","area"],
+    "id": 411
+  },
+  {
+    "name": "power_res",
+    "parent": ["offices"],
+    "tags": {"office":"power","office:type":"res"},
+    "moretags": {
+      "population": {
+        "type": "number",
+        "tag": "population"
+      },
+      "operator": {
+        "type": "number",
+        "tag": "operator"
+      }
+    },
+    "poi": true,
+    "type": ["way", "relation","node","area"],
+    "id": 412
+  },
+  {
+    "name": "power_master",
+    "parent": ["offices"],
+    "tags": {"office":"power","office:type":"master"},
+    "moretags": {
+      "population": {
+        "type": "number",
+        "tag": "population"
+      },
+      "operator": {
+        "type": "number",
+        "tag": "operator"
+      }
+    },
+    "poi": true,
+    "type": ["way", "relation","node","area"],
+    "id": 413
+  },
+
+  {
+    "name": "power_station",
+    "parent": ["power"],
+    "tags": {"power": "station"},
+    "moretags": {
+      "voltage": {
+        "type": "number",
+        "tag": "voltage"
+         },
+		"power_usage_mvt_dopustima":{
+		"type":"number",
+		"tag":"power_usage_mvt_dopustima"
+		},
+		"power_usage_mvt_real_kdz":{
+		"type":"number",
+		"tag":"power_usage_mvt_real_kdz"
+		},
+		"power_usage_mvt_perspectiv_all":{
+		"type":"number",
+		"tag":"power_usage_mvt_perspectiv_all"
+		},
+		"power_usage_percent":{
+		"type":"number",
+		"tag":"power_usage_percent"
+		},
+		"power_usage_comment":{
+		"type":"number",
+		"tag":"power_usage_comment"
+		},
+        "operator": {
+        "type": "number",
+        "tag": "operator"
+      }
+    },
+    "poi": true,
+    "type": ["node", "area"],
+    "id": 351
+  },
+  {
+    "name": "power_substation",
+    "parent": ["power"],
+    "tags": {"power": "sub_station"},
+    "moretags": {
+      "voltage": {
+        "type": "number",
+        "tag": "voltage"
+      },
+		"ele":{
+		"type":"number",
+		"tag":"ele"
+		},
+		"power_usage_mvt_dopustima":{
+		"type":"number",
+		"tag":"power_usage_mvt_dopustima"
+		},
+		"power_usage_mvt_real_kdz":{
+		"type":"number",
+		"tag":"power_usage_mvt_real_kdz"
+		},
+		"power_usage_mvt_perspectiv_all":{
+		"type":"number",
+		"tag":"power_usage_mvt_perspectiv_all"
+		},
+		"power_usage_percent":{
+		"type":"number",
+		"tag":"power_usage_percent"
+		},
+		"power_usage_comment":{
+		"type":"number",
+		"tag":"power_usage_comment"
+		},
+      "operator": {
+        "type": "number",
+        "tag": "operator"
+      }
+    },
+    "poi": true,
+    "type": ["node", "area"],
+    "id": 409
+  },
+  {
+    "name": "power_link",
+    "parent": ["power"],
+    "tags": {"power": "link"},
+    "moretags": {
+		"power_link_type":{
+			"type":"translate",
+			"class":"power_link_type",
+			"tag":"link"
+		},
+		"voltage":{
+		"type":"number",
+		"tag":"voltage"
+		},
+		"ele":{
+		"type":"number",
+		"tag":"ele"
+		},
+		"operator":{
+		"type":"number",
+		"tag":"operator"
+		},
+		"note":{
+		"type":"number",
+		"tag":"note"
+		}
+	},
+    "poi": true,
+    "type": ["node"],
+    "id": 416
+  },
+  {
+    "name": "power_tower",
+    "parent": ["power"],
+    "tags": {"power": "tower"},
+    "moretags": {
+		"material":{
+			"type":"translate",
+			"class":"material",
+			"tag":"material"
+		},
+		"disconnector":{
+			"type":"translate",
+			"class":"disconnector",
+			"tag":"disconnector"
+		},
+		"tower:type":{
+			"type":"translate",
+			"class":"tower:type",
+			"tag":"tower:type"
+		},
+		"insulation:type":{
+			"type":"translate",
+			"class":"insulation:type",
+			"tag":"insulation:type"
+		},
+		"insulation:material":{
+			"type":"translate",
+			"class":"material",
+			"tag":"insulation:material"
+		},
+		"ground_wire":{
+			"type":"translate",
+			"class":"ground_wire",
+			"tag":"ground_wire"
+		},
+		"unit_name":{
+			"type":"number",
+			"tag":"unit_name"
+		},
+		"model":{
+			"type":"number",
+			"tag":"model"
+		},
+		"date_enter_exp":{
+			"type":"number",
+			"tag":"date_enter_exp"
+		},
+		"wire_num":{
+			"type":"number",
+			"tag":"wire_num"
+		},
+		"base:type":{
+			"type":"number",
+			"tag":"base:type"
+		},
+		"disp_name":{
+			"type":"number",
+			"tag":"disp_name"
+		},
+		"voltage_construct":{
+			"type":"number",
+			"tag":"voltage_construct"
+		},
+
+		"height":{
+			"type":"number",
+			"tag":"height"
+		},
+		"ele":{
+			"type":"number",
+			"tag":"ele"
+		},
+		"operator":{
+			"type":"number",
+			"tag":"operator"
+		}
+	},
+    "poi": true,
+    "type": ["node"],
+    "id": 408
+  },
+
+  {
+    "name": "power_pole",
+    "parent": ["power"],
+    "tags": {"power": "pole"},
+    "moretags": {
+		"material":{
+			"type":"translate",
+			"class":"material",
+			"tag":"material"
+		},
+		"height":{
+		"type":"number",
+		"tag":"height"
+		},
+		"ele":{
+		"type":"number",
+		"tag":"ele"
+		},
+		"operator":{
+		"type":"number",
+		"tag":"operator"
+		}
+	},
+    "poi": true,
+    "type": ["node"],
+    "id": 414
+  },
+  {
+    "name": "power_plant",
+    "parent": ["power"],
+    "tags": {"power": "plant", "plant:output:electricity": "*" },
+    "moretags": {
+      "power_generation_source": {
+        "class": "power_generation_source",
+        "tag": "generator:source",
+        "type": "translate"
+      },
+      "power_generation_method": {
+        "class": "power_generation_method",
+        "tag": "generator:method",
+        "type": "translate"
+      },
+      "power_output_electricity": {
+        "tag": "plant:output:electricity",
+        "type": "number"
+      },
+      "power_output_hot_water": {
+        "tag": "plant:output:hot_water",
+        "type": "number"
+      },
+      "power_output_hot_air": {
+        "tag": "plant:output:hot_air",
+        "type": "number"
+      },
+      "power_output_cold_water": {
+        "tag": "plant:output:cold_water",
+        "type": "number"
+      },
+      "power_output_cold_air": {
+        "tag": "plant:output:cold_air",
+        "type": "number"
+      },
+      "power_output_compressed_air": {
+        "tag": "plant:output:compressed_air",
+        "type": "number"
+      },
+      "power_output_steam": {
+        "tag": "plant:output:steam",
+        "type": "number"
+      },
+      "power_output_vacuum": {
+        "tag": "plant:output:vacuum",
+        "type": "number"
+      }
+    },
+    "poi": true,
+    "type": ["node", "area"],
+    "id": 353
+  }
+]

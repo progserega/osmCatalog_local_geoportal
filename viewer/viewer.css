@@ -1,0 +1,105 @@
+body {
+	font-family : sans-serif;
+}
+
+a {
+	color : 808080;
+}
+
+ul.catalog-item {
+	display : block;
+	margin-left : 0px;
+	padding-left : 0px;
+}
+
+ul.catalog-item > li > ul.catalog-item {
+	margin-left : 20px;
+}
+
+ul.catalog-item > li {
+	display : block;
+	margin-left : 0px;
+	padding-left : 0px;
+}
+
+.poi-info {
+	margin-bottom: 3px;
+
+	border : 1px solid #c0c0c0;
+	border-radius : 7px;
+	background : #e0e0e0;
+	box-shadow : inset 1px 1px 0px 0px #ffffff, 3px 3px 5px 2px #909090;
+}
+
+.poi-info-left {
+	float : left;
+}
+
+.poi-info-right {
+	display : inline-block;
+}
+
+.poi-info-top {
+}
+
+.poi-info-bottom {
+}
+
+.poi-icon {
+   	width : 32px;
+	height : 37px;
+	margin : 2px;
+	border : 1px solid #808080;
+	border-radius : 5px;
+}
+
+a.poi-name {
+	color : black;
+	text-decoration : none;
+	font-size : 1.2em;
+	font-weight : bold;
+	padding : 2px;
+	margin : 0px;
+}
+
+div.poi-proplist {
+	margin-left : 5px;
+	padding : 5px 10px;
+	margin : 5px 10px 5px 5px;
+	float : left;
+	background-color : #d0d0d0;
+	border-radius : 10px;
+}
+
+div.poi-proplist > span {
+	font-size : 0.8em;
+	font-weight : bold;
+}
+
+div.poi-proplist ul {
+	font-size : 0.8em;
+	list-style-type: disc;
+	list-style-position: inside;
+	padding-left : 15px;
+}
+
+.poi-info-float-breaker {
+	clear : both;
+}
+
+.details {
+	font-size : 0.8em;
+	margin : 0px 5px;
+	vertical-align : baseline;
+}
+
+.tag {
+	font-weight : bold;
+	background-color : #d0d0d0;
+	padding : 1px 5px;
+	border-radius : 5px;
+}
+
+div.poi-proplist .tag {
+	background-color : #c0c0c0;
+}
